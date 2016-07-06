@@ -169,7 +169,7 @@ Note that all the payments arrive in a timely order in this example, and for eve
 
 Now let's say that the next payment comes in and the extracted information is 
 
-	actor = Maryann-Berry, target = Maddie-Franklin, created_time: 2016-04-07T03:34:58Z
+	actor = Maryann-Berry, 	target = Maddie-Franklin, 	created_time: 2016-04-07T03:34:58Z
 
 Extracted information from the five payments is
 
@@ -227,9 +227,9 @@ This payment is out of order but its timestamp still falls within the 60-second 
 
 So the edge list is now
 
-	actor = Jamie-Korn, target = Ying-Mo, created_time: 2016-04-07T03:34:20Z
+	actor = Jamie-Korn,    target = Ying-Mo, 		 created_time: 2016-04-07T03:34:20Z
 	actor = Maryann-Berry, target = Maddie-Franklin, created_time: 2016-04-07T03:34:58Z
-	actor = Maryann-Berry, target = Ying-Mo, created_time: 2016-04-07T03:34:00Z
+	actor = Maryann-Berry, target = Ying-Mo, 		 created_time: 2016-04-07T03:34:00Z
 	
 ![venmo-graph](images/htag_graph_7.png)
 
@@ -268,9 +268,9 @@ Because this payment now has the latest timestamp of `2016-04-07T03:35:02Z`, we 
 
 The payments now represented in the graph are:
 
-	actor = Jamie-Korn, target = Ying-Mo, created_time: 2016-04-07T03:34:20Z
-	actor = Maryann-Berry, target = Maddie-Franklin, created_time: 2016-04-07T03:34:58Z
-	actor = Nick-Shirreffs, target = Connor-Liebman, created_time: 2016-04-07T03:35:02Z
+	actor = Jamie-Korn, 	target = Ying-Mo, 		  created_time: 2016-04-07T03:34:20Z
+	actor = Maryann-Berry,  target = Maddie-Franklin, created_time: 2016-04-07T03:34:58Z
+	actor = Nick-Shirreffs, target = Connor-Liebman,  created_time: 2016-04-07T03:35:02Z
 	
 ![venmo-graph](images/htag_graph_8.png)
 
