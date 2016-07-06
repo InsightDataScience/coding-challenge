@@ -30,7 +30,7 @@ The vertices on the graph represent Venmo users and whenever one user pays anoth
 
 [Back to Table of Contents] (README.md#table-of-contents)
 
-We'd like you to implement your own version of this. However, we don't want this challenge to focus on the relatively uninteresting "DevOps" of connecting to the Venmo API. Normally, payments can be obtained through Venom’s API, but you may assume this has already been done, and data has been written to a file named `venmo-trans.txt` in a directory called `venmo_input`.
+We'd like you to implement your own version of this. However, we don't want this challenge to focus on the relatively uninteresting "DevOps" of connecting to the Venmo API. Normally, payments can be obtained through Venmo’s API, but you may assume this has already been done, and data has been written to a file named `venmo-trans.txt` in a directory called `venmo_input`.
 
 This file `venmo-trans.txt` will contain the actual JSON messages with each payment on a newline:
 
