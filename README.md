@@ -68,7 +68,7 @@ Here is an example of the extracted information from eight payments:
 	actor = Jordan-Gruber,	 	target = Jamie-Korn, 		created_time: 2016-04-07T03:33:19Z
 	actor = Maryann-Berry, 		target = Jamie-Korn, 		created_time: 2016-04-07T03:33:19Z
 	actor = Ying-Mo, 			target = Maryann-Berry, 	created_time: 2016-04-07T03:33:19Z
-	actor = Jamie-Korn, 		target = Ying-Mo, 			created_time: 2016-04-07T03:34:20Z
+	actor = Jamie-Korn, 		target = Ying-Mo, 			created_time: 2016-04-07T03:34:18Z
 	actor = Maryann-Berry, 		target = Maddie-Franklin, 	created_time: 2016-04-07T03:34:58Z
 	actor = Maryann-Berry, 		target = Ying-Mo, 			created_time: 2016-04-07T03:34:00Z
 	actor = Natalie-Piserchio, 	target = Rebecca-Waychunas, created_time: 2016-04-07T03:31:18Z
@@ -176,14 +176,14 @@ Extracted information from the five payments is
 	actor = Jordan-Gruber, 	target = Jamie-Korn, 		created_time: 2016-04-07T03:33:19Z
 	actor = Maryann-Berry, 	target = Jamie-Korn, 		created_time: 2016-04-07T03:33:19Z
 	actor = Ying-Mo, 		target = Maryann Berry, 	created_time: 2016-04-07T03:33:19Z
-	actor = Jamie-Korn, 	target = Ying-Mo, 			created_time: 2016-04-07T03:34:20Z
+	actor = Jamie-Korn, 	target = Ying-Mo, 			created_time: 2016-04-07T03:34:18Z
 	actor = Maryann-Berry, 	target = Maddie-Franklin, 	created_time: 2016-04-07T03:34:58Z
 	
 We can see that the first three payments have a timestamp that is more than 60 seconds older than this new payment. This means that the edges formed by the three payments should be evicted and should not be included in our median degree calculation.
 
 The revised information to be used in constructing the graph is as follows:
 
-	actor = Jamie-Korn, 	target = Ying-Mo, 			created_time: 2016-04-07T03:34:20Z
+	actor = Jamie-Korn, 	target = Ying-Mo, 			created_time: 2016-04-07T03:34:18Z
 	actor = Maryann-Berry, 	target = Maddie-Franklin, 	created_time: 2016-04-07T03:34:58Z
 
 The edge list is now:
@@ -227,7 +227,7 @@ This payment is out of order but its timestamp still falls within the 60-second 
 
 So the edge list is now
 
-	actor = Jamie-Korn,    target = Ying-Mo, 		 created_time: 2016-04-07T03:34:20Z
+	actor = Jamie-Korn,    target = Ying-Mo, 		 created_time: 2016-04-07T03:34:18Z
 	actor = Maryann-Berry, target = Maddie-Franklin, created_time: 2016-04-07T03:34:58Z
 	actor = Maryann-Berry, target = Ying-Mo, 		 created_time: 2016-04-07T03:34:00Z
 	
@@ -268,7 +268,7 @@ Because this payment now has the latest timestamp of `2016-04-07T03:35:02Z`, we 
 
 The payments now represented in the graph are:
 
-	actor = Jamie-Korn, 	target = Ying-Mo, 		  created_time: 2016-04-07T03:34:20Z
+	actor = Jamie-Korn, 	target = Ying-Mo, 		  created_time: 2016-04-07T03:34:18Z
 	actor = Maryann-Berry,  target = Maddie-Franklin, created_time: 2016-04-07T03:34:58Z
 	actor = Nick-Shirreffs, target = Connor-Liebman,  created_time: 2016-04-07T03:35:02Z
 	
