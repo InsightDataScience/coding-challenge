@@ -3,7 +3,7 @@
 1. [Challenge Summary] (README.md#challenge-summary)
 2. [Details of Implementation] (README.md#details-of-implementation)
 3. [Building the Venmo Graph] (README.md#building-the-venmo-graph)
-4. [Maintain data within 60-second window] (README.md#maintain-data-within-60second-window)
+4. [Maintain data within the 60 second window] (README.md#maintain-data-within-the-60-second-window)
 5. [Dealing with payments that arrive out of time] (README.md#dealing-with-payments-that-arrive-out-of-time)
 6. [Collecting payments from Venmo API] (README.md#collecting-payments-from-venmo-api)
 7. [Writing clean, scalable, and well-tested code] (README.md#writing-clean-scalable-and-well-tested-code)
