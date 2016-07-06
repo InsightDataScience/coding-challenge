@@ -2,14 +2,14 @@
 
 1. [Challenge Summary] (README.md#challenge-summary)
 2. [Details of Implementation] (README.md#details-of-implementation)
-3. [Building the Venmo Graph] (README.md#building-venmo-implementation)
-4. [Maintain data within 60-second window] (README.md#maintain-data-within-60-second-window)
+3. [Building the Venmo Graph] (README.md#building-the-venmo-graph)
+4. [Maintain data within 60-second window] (README.md#maintain-data-within-60second-window)
 5. [Dealing with payments that arrive out of time] (README.md#dealing-with-payments-that-arrive-out-of-time)
 6. [Collecting payments from Venmo API] (README.md#collecting-payments-from-venmo-api)
 7. [Writing clean, scalable, and well-tested code] (README.md#writing-clean-scalable-and-well-tested-code)
 8. [Repo directory structure] (README.md#repo-directory-structure)
-9. [Testing your directory structure and output format] (README.md#testing-your-directory-structure-and-output)
-10. [FAQ] (README.md#FAQ)
+9. [Testing your directory structure and output format] (README.md#testing-your-directory-structure-and-output-format)
+10. [FAQ] (README.md#faq)
 
 For this coding challenge, you will develop tools that could help analyze Venmo’s dataset. Some of the challenges here mimic real world problems.
 
