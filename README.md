@@ -248,7 +248,7 @@ Another payment now arrives
 
 	actor = Natalie-Piserchio, target = Rebecca-Waychunas, created_time: 2016-04-07T03:31:18Z
 
-But this payment is out of order and its timestamp is outside of the maximum timestamp last processed (i.e., `2016-04-07T03:34:00Z`). This payment should be ignored. It will not form any new edges and will not contribute to the graph. The graph remains the same as before this payment arrived. 
+But this payment is out of order and its timestamp is outside of the maximum timestamp last processed (i.e., `2016-04-07T03:34:58Z`). This payment should be ignored. It will not form any new edges and will not contribute to the graph. The graph remains the same as before this payment arrived. 
 
 The rolling median is the same as before: {1, 1, 2, 2} = 1.50. 
 	
