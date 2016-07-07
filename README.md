@@ -379,6 +379,9 @@ No, you may use a public repo, there is no need to purchase a private repo.  You
 * *How should I account for transactions that are missing an "actor" field?*  
 These errors in the input should be ignored by your program with correct exception handling.  They should not affect your graph, and should not result in a new line in the output file.  For simplicity, we have removed these entries from the sample file we have provided.
 
+* *Are transactions edges directed?  If person A sends a payment to person B, is that different than if person B sends a payment to person A?*  
+No, for simplicity the edges in the graph should be undirected.  Nodes are connected with an edge regardless of the direction of payment.  
+
 * *Do you have any larger sample inputs?*  
 Yes, we have provided a sample of approximately 1,800 transactions in the `data-gen` directory of this repo.
 
