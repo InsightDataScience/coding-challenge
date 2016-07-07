@@ -377,7 +377,7 @@ You should submit the URL for the top-level root of your repository.  For exampl
 No, you may use a public repo, there is no need to purchase a private repo.  You may also submit a link to a Bitbucket repo if you prefer.
 
 * *How should I account for transactions that are missing an "actor" field?*  
-These errors in the input should be ignored by your program with correct exception handling.  They should not affect your graph, and should not result in a new entry.  For simplicity, we have removed these entries from the sample file we have provided.
+These errors in the input should be ignored by your program with correct exception handling.  They should not affect your graph, and should not result in a new line in the output file.  For simplicity, we have removed these entries from the sample file we have provided.
 
 * *Do you have any larger sample inputs?*  
 Yes, we have provided a sample of approximately 1,800 transactions in the `data-gen` directory of this repo.
