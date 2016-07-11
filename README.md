@@ -287,7 +287,7 @@ The new median degree, calculated from {1, 1, 1, 1, 1, 1} = 1.00 and our new lis
 	1.50
 	1.00
 
-The output should be a file in the `venmo_output` directory named `output.txt` that contains the rolling median for each transaction in the file (e.g. if there are three input transactions, then there should be 3 medians), following the format above. The precision of the average should be two digits after the decimal place with truncation.
+The output should be a file in the `venmo_output` directory named `output.txt` that contains the rolling median for each transaction in the file (e.g. if there are three input transactions, then there should be 3 medians), following the format above. The precision of the median should be two digits after the decimal place with truncation.
 
 ##Collecting payments from Venmo API
 
@@ -409,8 +409,8 @@ No, your solution doesn't have to re-process `venmo-trans.txt`.  Instead, it sho
 * *What should the format of the output be?*  
 In order to be tested correctly, you must use the format described above.  You can ensure that you have the correct format by using the testing suite we've included.  If you are still unable to get the correct format from the messages in the suite, please email us at cc@insightdataengineering.com.
 
-* *What should the precision of the average be?*  
-The precision of the average should be truncated to two digits after the decimal place (e.g. 5/3 should be outputted as 1.66).  
+* *What should the precision of the median be?*  
+The precision of the median should be truncated to two digits after the decimal place (e.g. 5/3 should be outputted as 1.66).  
 
 * *Do I need to update the median when the next payment in the file falls outside the 60-second window?*  
 Yes, you're median should be updated each time a new payment is processed, regardless of if it falls outside the window.  Thus, if there are 500 lines in the input file, and 5 are incorrectly formatted (perhaps missing the actor field), then there should be 495 lines of median degree in `output.txt`. 
